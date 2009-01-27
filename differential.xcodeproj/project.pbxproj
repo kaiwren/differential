@@ -11,7 +11,19 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B8ECF3410F2F60CF00D14C0D /* FooTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ECF3400F2F60CF00D14C0D /* FooTest.m */; };
+		B8ECF3440F2F60E300D14C0D /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ECF3430F2F60E300D14C0D /* Foo.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8ECF3390F2F5F4B00D14C0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090 /* differential */;
+			remoteInfo = differential;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -24,6 +36,12 @@
 		32CA4F630368D1EE00C91783 /* differential_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = differential_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* differential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = differential.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8ECF3340F2F5F4400D14C0D /* specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8ECF3350F2F5F4400D14C0D /* specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "specs-Info.plist"; sourceTree = "<group>"; };
+		B8ECF33F0F2F60CF00D14C0D /* FooTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooTest.h; sourceTree = "<group>"; };
+		B8ECF3400F2F60CF00D14C0D /* FooTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooTest.m; sourceTree = "<group>"; };
+		B8ECF3420F2F60E300D14C0D /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		B8ECF3430F2F60E300D14C0D /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,12 +53,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8ECF3310F2F5F4400D14C0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B8ECF3420F2F60E300D14C0D /* Foo.h */,
+				B8ECF3430F2F60E300D14C0D /* Foo.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -67,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* differential.app */,
+				B8ECF3340F2F5F4400D14C0D /* specs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,11 +102,13 @@
 		29B97314FDCFA39411CA2CEA /* differential */ = {
 			isa = PBXGroup;
 			children = (
+				B8ECF3290F2F5EC300D14C0D /* Specs */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				B8ECF3350F2F5F4400D14C0D /* specs-Info.plist */,
 			);
 			name = differential;
 			sourceTree = "<group>";
@@ -111,6 +141,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B8ECF3290F2F5EC300D14C0D /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				B8ECF33F0F2F60CF00D14C0D /* FooTest.h */,
+				B8ECF3400F2F60CF00D14C0D /* FooTest.m */,
+			);
+			name = Specs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +171,25 @@
 			productReference = 8D1107320486CEB800E47090 /* differential.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B8ECF3330F2F5F4400D14C0D /* specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8ECF3380F2F5F4500D14C0D /* Build configuration list for PBXNativeTarget "specs" */;
+			buildPhases = (
+				B8ECF32F0F2F5F4400D14C0D /* Resources */,
+				B8ECF3300F2F5F4400D14C0D /* Sources */,
+				B8ECF3310F2F5F4400D14C0D /* Frameworks */,
+				B8ECF3320F2F5F4400D14C0D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8ECF33A0F2F5F4B00D14C0D /* PBXTargetDependency */,
+			);
+			name = specs;
+			productName = specs;
+			productReference = B8ECF3340F2F5F4400D14C0D /* specs.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* differential */,
+				B8ECF3330F2F5F4400D14C0D /* specs */,
 			);
 		};
 /* End PBXProject section */
@@ -159,7 +218,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8ECF32F0F2F5F4400D14C0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8ECF3320F2F5F4400D14C0D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D11072C0486CEB800E47090 /* Sources */ = {
@@ -167,10 +249,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				B8ECF3440F2F60E300D14C0D /* Foo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8ECF3300F2F5F4400D14C0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8ECF3410F2F60CF00D14C0D /* FooTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8ECF33A0F2F5F4B00D14C0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* differential */;
+			targetProxy = B8ECF3390F2F5F4B00D14C0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -192,6 +291,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B8ECF3360F2F5F4500D14C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/differential.app/Contents/MacOS/differential";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "specs-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = specs;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B8ECF3370F2F5F4500D14C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/differential.app/Contents/MacOS/differential";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "specs-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = specs;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -252,6 +409,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B8ECF3380F2F5F4500D14C0D /* Build configuration list for PBXNativeTarget "specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8ECF3360F2F5F4500D14C0D /* Debug */,
+				B8ECF3370F2F5F4500D14C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "differential" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
