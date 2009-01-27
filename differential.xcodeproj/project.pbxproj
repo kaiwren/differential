@@ -42,6 +42,7 @@
 		B8ECF3400F2F60CF00D14C0D /* FooTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooTest.m; sourceTree = "<group>"; };
 		B8ECF3420F2F60E300D14C0D /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
 		B8ECF3430F2F60E300D14C0D /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
+		B8ECF3790F2F665900D14C0D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +119,7 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* differential_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				B8ECF3790F2F665900D14C0D /* Makefile */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
