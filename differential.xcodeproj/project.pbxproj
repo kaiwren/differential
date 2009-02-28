@@ -11,9 +11,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		B84F9A420F595E4700663532 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B84F9A410F595E4700663532 /* GTMSenTestCase.m */; };
-		B84F9A470F595FDA00663532 /* FooTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B84F9A460F595FDA00663532 /* FooTest.m */; };
-		B84F9A4B0F595FE900663532 /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = B84F9A4A0F595FE900663532 /* Foo.m */; };
+		B8ECF3410F2F60CF00D14C0D /* FooTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ECF3400F2F60CF00D14C0D /* FooTest.m */; };
+		B8ECF3440F2F60E300D14C0D /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ECF3430F2F60E300D14C0D /* Foo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +20,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteGlobalIDString = 8D1107260486CEB800E47090 /* differential */;
 			remoteInfo = differential;
 		};
 /* End PBXContainerItemProxy section */
@@ -37,15 +36,12 @@
 		32CA4F630368D1EE00C91783 /* differential_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = differential_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* differential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = differential.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B84F9A3F0F595E4700663532 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		B84F9A400F595E4700663532 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
-		B84F9A410F595E4700663532 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
-		B84F9A450F595FDA00663532 /* FooTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooTest.h; sourceTree = "<group>"; };
-		B84F9A460F595FDA00663532 /* FooTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooTest.m; sourceTree = "<group>"; };
-		B84F9A490F595FE900663532 /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
-		B84F9A4A0F595FE900663532 /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 		B8ECF3340F2F5F4400D14C0D /* specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8ECF3350F2F5F4400D14C0D /* specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "specs-Info.plist"; sourceTree = "<group>"; };
+		B8ECF33F0F2F60CF00D14C0D /* FooTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooTest.h; sourceTree = "<group>"; };
+		B8ECF3400F2F60CF00D14C0D /* FooTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooTest.m; sourceTree = "<group>"; };
+		B8ECF3420F2F60E300D14C0D /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		B8ECF3430F2F60E300D14C0D /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 		B8ECF3790F2F665900D14C0D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B8ECF3420F2F60E300D14C0D /* Foo.h */,
+				B8ECF3430F2F60E300D14C0D /* Foo.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +103,8 @@
 		29B97314FDCFA39411CA2CEA /* differential */ = {
 			isa = PBXGroup;
 			children = (
-				B84F9A480F595FE900663532 /* Classes */,
-				B84F9A440F595FDA00663532 /* Spec */,
-				B84F9A3D0F595E4700663532 /* Lib */,
+				B8ECF3290F2F5EC300D14C0D /* Specs */,
+				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -139,40 +143,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B84F9A3D0F595E4700663532 /* Lib */ = {
+		B8ECF3290F2F5EC300D14C0D /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				B84F9A3E0F595E4700663532 /* UnitTesting */,
+				B8ECF33F0F2F60CF00D14C0D /* FooTest.h */,
+				B8ECF3400F2F60CF00D14C0D /* FooTest.m */,
 			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		B84F9A3E0F595E4700663532 /* UnitTesting */ = {
-			isa = PBXGroup;
-			children = (
-				B84F9A3F0F595E4700663532 /* GTMDefines.h */,
-				B84F9A400F595E4700663532 /* GTMSenTestCase.h */,
-				B84F9A410F595E4700663532 /* GTMSenTestCase.m */,
-			);
-			path = UnitTesting;
-			sourceTree = "<group>";
-		};
-		B84F9A440F595FDA00663532 /* Spec */ = {
-			isa = PBXGroup;
-			children = (
-				B84F9A450F595FDA00663532 /* FooTest.h */,
-				B84F9A460F595FDA00663532 /* FooTest.m */,
-			);
-			path = Spec;
-			sourceTree = "<group>";
-		};
-		B84F9A480F595FE900663532 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B84F9A490F595FE900663532 /* Foo.h */,
-				B84F9A4A0F595FE900663532 /* Foo.m */,
-			);
-			path = Classes;
+			name = Specs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				B84F9A4B0F595FE900663532 /* Foo.m in Sources */,
+				B8ECF3440F2F60E300D14C0D /* Foo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B84F9A420F595E4700663532 /* GTMSenTestCase.m in Sources */,
-				B84F9A470F595FDA00663532 /* FooTest.m in Sources */,
+				B8ECF3410F2F60CF00D14C0D /* FooTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
