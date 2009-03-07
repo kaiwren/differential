@@ -42,17 +42,17 @@
 		32CA4F630368D1EE00C91783 /* differential_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = differential_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* differential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = differential.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B89E6F880F629CFA00E4C978 /* SyncTaskSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncTaskSpec.h; sourceTree = "<group>"; };
+		B89E6F880F629CFA00E4C978 /* SpecHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
 		B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTaskSpec.m; sourceTree = "<group>"; };
 		B89E6F8B0F629D5100E4C978 /* SyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncTask.h; sourceTree = "<group>"; };
 		B89E6F8C0F629D5100E4C978 /* SyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTask.m; sourceTree = "<group>"; };
 		B89E6FD90F62A06F00E4C978 /* NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString.m; sourceTree = "<group>"; };
+		B89E70230F62B8C000E4C978 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B8D29ABF0F5C3F34004AE6B5 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		B8D29AC00F5C3F34004AE6B5 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
 		B8D29AC10F5C3F34004AE6B5 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
 		B8ECF3340F2F5F4400D14C0D /* specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8ECF3350F2F5F4400D14C0D /* specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "specs-Info.plist"; sourceTree = "<group>"; };
-		B8ECF3790F2F665900D14C0D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		CD0FEB160F62A721001215F1 /* UserInterface */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UserInterface; sourceTree = "<group>"; };
 		CD0FEB190F62A731001215F1 /* Additions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Additions; sourceTree = "<group>"; };
 		CD0FEB1C0F62A73D001215F1 /* DomainObjects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DomainObjects; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* differential_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
-				B8ECF3790F2F665900D14C0D /* Makefile */,
+				B89E70230F62B8C000E4C978 /* Rakefile */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 		B8D29ABC0F5C3F26004AE6B5 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
-				B89E6F880F629CFA00E4C978 /* SyncTaskSpec.h */,
+				B89E6F880F629CFA00E4C978 /* SpecHelper.h */,
 				B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */,
 			);
 			path = Spec;

@@ -1,13 +1,8 @@
-//
-//  SyncTaskSpec.m
-//  differential
-//
-//  Created by irfn on 07/03/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
-//
-#import "SyncTaskSpec.h"
-#import "SyncTask.h"
+#import "SpecHelper.h"
 
+@interface SyncTaskSpec : SenTestCase {
+}
+@end
 
 @implementation SyncTaskSpec
 - (void) testRunWithArguments
