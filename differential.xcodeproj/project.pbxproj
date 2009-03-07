@@ -15,6 +15,10 @@
 		B89E6FC50F62A01400E4C978 /* SyncTaskSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */; };
 		B89E6FDA0F62A06F00E4C978 /* NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E6FD90F62A06F00E4C978 /* NSString.m */; };
 		B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D29AC10F5C3F34004AE6B5 /* GTMSenTestCase.m */; };
+		CD0FEB180F62A721001215F1 /* UserInterface in Resources */ = {isa = PBXBuildFile; fileRef = CD0FEB160F62A721001215F1 /* UserInterface */; };
+		CD0FEB1B0F62A731001215F1 /* Additions in Resources */ = {isa = PBXBuildFile; fileRef = CD0FEB190F62A731001215F1 /* Additions */; };
+		CD0FEB1E0F62A73D001215F1 /* DomainObjects in Resources */ = {isa = PBXBuildFile; fileRef = CD0FEB1C0F62A73D001215F1 /* DomainObjects */; };
+		CD0FEB420F62A898001215F1 /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = CD0FEB400F62A898001215F1 /* Controllers */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		B8ECF3340F2F5F4400D14C0D /* specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8ECF3350F2F5F4400D14C0D /* specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "specs-Info.plist"; sourceTree = "<group>"; };
 		B8ECF3790F2F665900D14C0D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CD0FEB160F62A721001215F1 /* UserInterface */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UserInterface; sourceTree = "<group>"; };
+		CD0FEB190F62A731001215F1 /* Additions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Additions; sourceTree = "<group>"; };
+		CD0FEB1C0F62A73D001215F1 /* DomainObjects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DomainObjects; sourceTree = "<group>"; };
+		CD0FEB400F62A898001215F1 /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +179,10 @@
 		B8D29AC30F5C3F48004AE6B5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CD0FEB400F62A898001215F1 /* Controllers */,
+				CD0FEB1C0F62A73D001215F1 /* DomainObjects */,
+				CD0FEB190F62A731001215F1 /* Additions */,
+				CD0FEB160F62A721001215F1 /* UserInterface */,
 				B89E6F8B0F629D5100E4C978 /* SyncTask.h */,
 				B89E6F8C0F629D5100E4C978 /* SyncTask.m */,
 				B89E6FD90F62A06F00E4C978 /* NSString.m */,
@@ -243,6 +255,10 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				CD0FEB180F62A721001215F1 /* UserInterface in Resources */,
+				CD0FEB1B0F62A731001215F1 /* Additions in Resources */,
+				CD0FEB1E0F62A73D001215F1 /* DomainObjects in Resources */,
+				CD0FEB420F62A898001215F1 /* Controllers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
