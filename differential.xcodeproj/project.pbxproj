@@ -11,16 +11,16 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		B89E6F8D0F629D5100E4C978 /* SyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E6F8C0F629D5100E4C978 /* SyncTask.m */; };
-		B89E6FC50F62A01400E4C978 /* SyncTaskSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */; };
 		B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D29AC10F5C3F34004AE6B5 /* GTMSenTestCase.m */; };
-		B8ED7DB70F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DB60F62C911002B5BA8 /* NSString+NSStringExtensions.m */; };
-		B8ED7DB80F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DB60F62C911002B5BA8 /* NSString+NSStringExtensions.m */; };
 		B8ED7DC10F62C99E002B5BA8 /* ESSomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DC00F62C99E002B5BA8 /* ESSomeController.m */; };
 		B8ED7DC90F62C9E9002B5BA8 /* ESFileSystemDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DC40F62C9E9002B5BA8 /* ESFileSystemDirectory.m */; };
 		B8ED7DCA0F62C9E9002B5BA8 /* ESFileSystemFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DC60F62C9E9002B5BA8 /* ESFileSystemFile.m */; };
 		B8ED7DCB0F62C9E9002B5BA8 /* ESFileSystemItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DC80F62C9E9002B5BA8 /* ESFileSystemItem.m */; };
 		B8ED7DCE0F62C9F9002B5BA8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */; };
+		B8ED7DE70F62CDB4002B5BA8 /* SyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DE60F62CDB4002B5BA8 /* SyncTask.m */; };
+		B8ED7DEB0F62CDF7002B5BA8 /* SyncTaskSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DEA0F62CDF7002B5BA8 /* SyncTaskSpec.m */; };
+		B8ED7E010F62CE95002B5BA8 /* NSString+NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7E000F62CE95002B5BA8 /* NSString+NSStringExtensions.m */; };
+		B8ED7E020F62CE95002B5BA8 /* NSString+NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7E000F62CE95002B5BA8 /* NSString+NSStringExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,17 +45,12 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* differential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = differential.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89E6F880F629CFA00E4C978 /* SpecHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
-		B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTaskSpec.m; sourceTree = "<group>"; };
-		B89E6F8B0F629D5100E4C978 /* SyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncTask.h; sourceTree = "<group>"; };
-		B89E6F8C0F629D5100E4C978 /* SyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTask.m; sourceTree = "<group>"; };
 		B89E70230F62B8C000E4C978 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B8D29ABF0F5C3F34004AE6B5 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		B8D29AC00F5C3F34004AE6B5 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
 		B8D29AC10F5C3F34004AE6B5 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
 		B8ECF3340F2F5F4400D14C0D /* specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8ECF3350F2F5F4400D14C0D /* specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "specs-Info.plist"; sourceTree = "<group>"; };
-		B8ED7DB50F62C911002B5BA8 /* NSString+NSStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSStringExtensions.h"; sourceTree = "<group>"; };
-		B8ED7DB60F62C911002B5BA8 /* NSString+NSStringExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSStringExtensions.m"; sourceTree = "<group>"; };
 		B8ED7DBF0F62C99E002B5BA8 /* ESSomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSomeController.h; sourceTree = "<group>"; };
 		B8ED7DC00F62C99E002B5BA8 /* ESSomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSomeController.m; sourceTree = "<group>"; };
 		B8ED7DC30F62C9E9002B5BA8 /* ESFileSystemDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFileSystemDirectory.h; sourceTree = "<group>"; };
@@ -65,6 +60,11 @@
 		B8ED7DC70F62C9E9002B5BA8 /* ESFileSystemItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFileSystemItem.h; sourceTree = "<group>"; };
 		B8ED7DC80F62C9E9002B5BA8 /* ESFileSystemItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFileSystemItem.m; sourceTree = "<group>"; };
 		B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B8ED7DE50F62CDB4002B5BA8 /* SyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncTask.h; sourceTree = "<group>"; };
+		B8ED7DE60F62CDB4002B5BA8 /* SyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTask.m; sourceTree = "<group>"; };
+		B8ED7DEA0F62CDF7002B5BA8 /* SyncTaskSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTaskSpec.m; sourceTree = "<group>"; };
+		B8ED7DFF0F62CE95002B5BA8 /* NSString+NSStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSStringExtensions.h"; sourceTree = "<group>"; };
+		B8ED7E000F62CE95002B5BA8 /* NSString+NSStringExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSStringExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +160,8 @@
 		B8D29ABC0F5C3F26004AE6B5 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
+				B8ED7DE90F62CDF7002B5BA8 /* Models */,
 				B89E6F880F629CFA00E4C978 /* SpecHelper.h */,
-				B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
@@ -191,8 +191,6 @@
 				B8ED7DC20F62C9E9002B5BA8 /* Models */,
 				B8ED7DBE0F62C99E002B5BA8 /* Controllers */,
 				B8ED7DB40F62C911002B5BA8 /* Additions */,
-				B89E6F8B0F629D5100E4C978 /* SyncTask.h */,
-				B89E6F8C0F629D5100E4C978 /* SyncTask.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -200,8 +198,8 @@
 		B8ED7DB40F62C911002B5BA8 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
-				B8ED7DB50F62C911002B5BA8 /* NSString+NSStringExtensions.h */,
-				B8ED7DB60F62C911002B5BA8 /* NSString+NSStringExtensions.m */,
+				B8ED7DFF0F62CE95002B5BA8 /* NSString+NSStringExtensions.h */,
+				B8ED7E000F62CE95002B5BA8 /* NSString+NSStringExtensions.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -218,6 +216,8 @@
 		B8ED7DC20F62C9E9002B5BA8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B8ED7DE50F62CDB4002B5BA8 /* SyncTask.h */,
+				B8ED7DE60F62CDB4002B5BA8 /* SyncTask.m */,
 				B8ED7DC30F62C9E9002B5BA8 /* ESFileSystemDirectory.h */,
 				B8ED7DC40F62C9E9002B5BA8 /* ESFileSystemDirectory.m */,
 				B8ED7DC50F62C9E9002B5BA8 /* ESFileSystemFile.h */,
@@ -234,6 +234,14 @@
 				B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B8ED7DE90F62CDF7002B5BA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8ED7DEA0F62CDF7002B5BA8 /* SyncTaskSpec.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,12 +344,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				B89E6F8D0F629D5100E4C978 /* SyncTask.m in Sources */,
-				B8ED7DB80F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */,
 				B8ED7DC10F62C99E002B5BA8 /* ESSomeController.m in Sources */,
 				B8ED7DC90F62C9E9002B5BA8 /* ESFileSystemDirectory.m in Sources */,
 				B8ED7DCA0F62C9E9002B5BA8 /* ESFileSystemFile.m in Sources */,
 				B8ED7DCB0F62C9E9002B5BA8 /* ESFileSystemItem.m in Sources */,
+				B8ED7DE70F62CDB4002B5BA8 /* SyncTask.m in Sources */,
+				B8ED7E020F62CE95002B5BA8 /* NSString+NSStringExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +358,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */,
-				B89E6FC50F62A01400E4C978 /* SyncTaskSpec.m in Sources */,
-				B8ED7DB70F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */,
+				B8ED7DEB0F62CDF7002B5BA8 /* SyncTaskSpec.m in Sources */,
+				B8ED7E010F62CE95002B5BA8 /* NSString+NSStringExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

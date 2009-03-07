@@ -251,6 +251,46 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
+				<string>B8ED7DD10F62CCD7002B5BA8</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>ESSomeController.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>B8ED7DD20F62CCD7002B5BA8</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>ESSomeController.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>B8ED7DD30F62CCD7002B5BA8</string>
+						<key>history</key>
+						<array>
+							<string>B8ED7DD00F62CC96002B5BA8</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {927, 682}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>107 66 927 723 0 0 1440 878 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
 				<string>B89E703F0F62BE4A00E4C978</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>SyncTaskSpec.m</string>
@@ -265,7 +305,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>B8ED7DBD0F62C951002B5BA8</string>
+						<string>B8ED7DD40F62CCD7002B5BA8</string>
 						<key>history</key>
 						<array>
 							<string>B89E70510F62C10F00E4C978</string>
@@ -351,8 +391,9 @@
 									<array>
 										<string>29B97314FDCFA39411CA2CEA</string>
 										<string>B8D29AC30F5C3F48004AE6B5</string>
+										<string>B8ED7DC20F62C9E9002B5BA8</string>
+										<string>B8ED7DBE0F62C99E002B5BA8</string>
 										<string>B8ED7DB40F62C911002B5BA8</string>
-										<string>CD0FEB400F62A898001215F1</string>
 										<string>B8D29ABC0F5C3F26004AE6B5</string>
 										<string>29B97315FDCFA39411CA2CEA</string>
 										<string>29B97317FDCFA39411CA2CEA</string>
@@ -362,8 +403,6 @@
 									<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 									<array>
 										<array>
-											<integer>2</integer>
-											<integer>1</integer>
 											<integer>0</integer>
 										</array>
 									</array>
@@ -551,7 +590,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>258132305.939704</real>
+	<real>258133207.09894201</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -567,9 +606,10 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1C530D54069F1CE1000CFCEE</string>
-		<string>1C530D52069F1CE1000CFCEE</string>
-		<string>/Users/irfn/dev/objc/differential/differential.xcodeproj</string>
 		<string>B89E703F0F62BE4A00E4C978</string>
+		<string>1C530D52069F1CE1000CFCEE</string>
+		<string>B8ED7DD10F62CCD7002B5BA8</string>
+		<string>/Users/irfn/dev/objc/differential/differential.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>9 361 581 507 0 0 1440 878 </string>
