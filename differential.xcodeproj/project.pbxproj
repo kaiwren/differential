@@ -11,6 +11,9 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B89E6F8D0F629D5100E4C978 /* SyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E6F8C0F629D5100E4C978 /* SyncTask.m */; };
+		B89E6FC50F62A01400E4C978 /* SyncTaskSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */; };
+		B89E6FDA0F62A06F00E4C978 /* NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E6FD90F62A06F00E4C978 /* NSString.m */; };
 		B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D29AC10F5C3F34004AE6B5 /* GTMSenTestCase.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,11 @@
 		32CA4F630368D1EE00C91783 /* differential_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = differential_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* differential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = differential.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89E6F880F629CFA00E4C978 /* SyncTaskSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncTaskSpec.h; sourceTree = "<group>"; };
+		B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTaskSpec.m; sourceTree = "<group>"; };
+		B89E6F8B0F629D5100E4C978 /* SyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncTask.h; sourceTree = "<group>"; };
+		B89E6F8C0F629D5100E4C978 /* SyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTask.m; sourceTree = "<group>"; };
+		B89E6FD90F62A06F00E4C978 /* NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString.m; sourceTree = "<group>"; };
 		B8D29ABF0F5C3F34004AE6B5 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		B8D29AC00F5C3F34004AE6B5 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
 		B8D29AC10F5C3F34004AE6B5 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
@@ -136,6 +144,8 @@
 		B8D29ABC0F5C3F26004AE6B5 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
+				B89E6F880F629CFA00E4C978 /* SyncTaskSpec.h */,
+				B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
@@ -161,6 +171,9 @@
 		B8D29AC30F5C3F48004AE6B5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B89E6F8B0F629D5100E4C978 /* SyncTask.h */,
+				B89E6F8C0F629D5100E4C978 /* SyncTask.m */,
+				B89E6FD90F62A06F00E4C978 /* NSString.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -264,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				B89E6F8D0F629D5100E4C978 /* SyncTask.m in Sources */,
+				B89E6FDA0F62A06F00E4C978 /* NSString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */,
+				B89E6FC50F62A01400E4C978 /* SyncTaskSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
