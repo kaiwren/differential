@@ -11,8 +11,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		B89E6F8D0F629D5100E4C978 /* SyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E6F8C0F629D5100E4C978 /* SyncTask.m */; };
-		B89E6FC50F62A01400E4C978 /* SyncTaskSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */; };
+		B87EB4DF0F63F136009CA28E /* SyncTaskSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB4DE0F63F136009CA28E /* SyncTaskSpec.m */; };
+		B87EB4E20F63F15C009CA28E /* SyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB4E10F63F15C009CA28E /* SyncTask.m */; };
 		B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D29AC10F5C3F34004AE6B5 /* GTMSenTestCase.m */; };
 		B8ED7DB70F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DB60F62C911002B5BA8 /* NSString+NSStringExtensions.m */; };
 		B8ED7DB80F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DB60F62C911002B5BA8 /* NSString+NSStringExtensions.m */; };
@@ -45,10 +45,10 @@
 		32CA4F630368D1EE00C91783 /* differential_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = differential_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* differential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = differential.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87EB4DE0F63F136009CA28E /* SyncTaskSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTaskSpec.m; sourceTree = "<group>"; };
+		B87EB4E00F63F15C009CA28E /* SyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncTask.h; sourceTree = "<group>"; };
+		B87EB4E10F63F15C009CA28E /* SyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTask.m; sourceTree = "<group>"; };
 		B89E6F880F629CFA00E4C978 /* SpecHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
-		B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTaskSpec.m; sourceTree = "<group>"; };
-		B89E6F8B0F629D5100E4C978 /* SyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncTask.h; sourceTree = "<group>"; };
-		B89E6F8C0F629D5100E4C978 /* SyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTask.m; sourceTree = "<group>"; };
 		B89E70230F62B8C000E4C978 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B8D29ABF0F5C3F34004AE6B5 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		B8D29AC00F5C3F34004AE6B5 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
@@ -160,11 +160,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B87EB4DD0F63F136009CA28E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B87EB4DE0F63F136009CA28E /* SyncTaskSpec.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B8D29ABC0F5C3F26004AE6B5 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
+				B87EB4DD0F63F136009CA28E /* Models */,
 				B89E6F880F629CFA00E4C978 /* SpecHelper.h */,
-				B89E6F890F629CFA00E4C978 /* SyncTaskSpec.m */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
@@ -194,8 +202,6 @@
 				B8ED7DC20F62C9E9002B5BA8 /* Models */,
 				B8ED7DBE0F62C99E002B5BA8 /* Controllers */,
 				B8ED7DB40F62C911002B5BA8 /* Additions */,
-				B89E6F8B0F629D5100E4C978 /* SyncTask.h */,
-				B89E6F8C0F629D5100E4C978 /* SyncTask.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -223,6 +229,8 @@
 		B8ED7DC20F62C9E9002B5BA8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B87EB4E00F63F15C009CA28E /* SyncTask.h */,
+				B87EB4E10F63F15C009CA28E /* SyncTask.m */,
 				B8ED7DC30F62C9E9002B5BA8 /* ESFileSystemDirectory.h */,
 				B8ED7DC40F62C9E9002B5BA8 /* ESFileSystemDirectory.m */,
 				B8ED7DC50F62C9E9002B5BA8 /* ESFileSystemFile.h */,
@@ -341,13 +349,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				B89E6F8D0F629D5100E4C978 /* SyncTask.m in Sources */,
 				B8ED7DB80F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */,
 				B8ED7DC10F62C99E002B5BA8 /* ESSomeController.m in Sources */,
 				B8ED7DC90F62C9E9002B5BA8 /* ESFileSystemDirectory.m in Sources */,
 				B8ED7DCA0F62C9E9002B5BA8 /* ESFileSystemFile.m in Sources */,
 				B8ED7DCB0F62C9E9002B5BA8 /* ESFileSystemItem.m in Sources */,
 				CDCE5B5B0F63DE88002B198A /* ESDrawerController.m in Sources */,
+				B87EB4E20F63F15C009CA28E /* SyncTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,8 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */,
-				B89E6FC50F62A01400E4C978 /* SyncTaskSpec.m in Sources */,
 				B8ED7DB70F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */,
+				B87EB4DF0F63F136009CA28E /* SyncTaskSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

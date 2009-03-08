@@ -36,7 +36,7 @@ namespace :spec do
     print "* Running specs"
     output = nil
     time_taken = with_timer do
-      output = `xcodebuild -target specs -configuration #{CONFIGURATION}`
+      output = `xcodebuild -target specs`
     end
     result = XcodeOutputParser::TestResultParser.new.parse_output(output)
     unless result.success?
@@ -66,4 +66,4 @@ task :release do
   puts "* Done."
 end
  
-task :default => 'spec:all'
+task :default => 'spec:build'

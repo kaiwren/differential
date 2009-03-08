@@ -10,7 +10,10 @@
 
 
 @interface SyncTask : NSObject {
-
+	NSString *path;
 }
+
++ (id) new: (NSString *) aPath;
+- (id) initWithPath: (NSString *) aPath;
 - (NSString *)runCommand:(NSString *)command withArguments:(NSArray *)args;
 @end
