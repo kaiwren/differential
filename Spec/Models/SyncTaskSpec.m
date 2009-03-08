@@ -7,7 +7,8 @@
 @implementation SyncTaskSpec
 - (void) testRunWithArguments
 {	
-	SyncTask *task = [SyncTask new: @"/Users/irfn/dev/ruby/ironruby"];
+    NSString *homeDir = [[[NSProcessInfo processInfo] environment] objectForKey:@"HOME"];
+	SyncTask *task = [SyncTask new: [NSString stringWithFormat: @"%@/dev/ruby/ironruby", homeDir]];
 	NSArray *args  = [NSArray arrayWithObjects:@"foo", nil];;
 
 	NSString *result = [task runCommand:@"/bin/echo" withArguments: args];

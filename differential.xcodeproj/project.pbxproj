@@ -21,6 +21,8 @@
 		B8ED7DCA0F62C9E9002B5BA8 /* ESFileSystemFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DC60F62C9E9002B5BA8 /* ESFileSystemFile.m */; };
 		B8ED7DCB0F62C9E9002B5BA8 /* ESFileSystemItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DC80F62C9E9002B5BA8 /* ESFileSystemItem.m */; };
 		B8ED7DCE0F62C9F9002B5BA8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */; };
+		CD3010BB0F6409E00010EDC1 /* ESFileTreeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3010BA0F6409E00010EDC1 /* ESFileTreeDataSource.m */; };
+		CD3010C00F640D2C0010EDC1 /* ESFileSystemItemSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3010BF0F640D2C0010EDC1 /* ESFileSystemItemSpec.m */; };
 		CDCE5B5B0F63DE88002B198A /* ESDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE5B5A0F63DE88002B198A /* ESDrawerController.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,9 @@
 		B8ED7DC70F62C9E9002B5BA8 /* ESFileSystemItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFileSystemItem.h; sourceTree = "<group>"; };
 		B8ED7DC80F62C9E9002B5BA8 /* ESFileSystemItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFileSystemItem.m; sourceTree = "<group>"; };
 		B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CD3010B90F6409E00010EDC1 /* ESFileTreeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFileTreeDataSource.h; sourceTree = "<group>"; };
+		CD3010BA0F6409E00010EDC1 /* ESFileTreeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFileTreeDataSource.m; sourceTree = "<group>"; };
+		CD3010BF0F640D2C0010EDC1 /* ESFileSystemItemSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFileSystemItemSpec.m; sourceTree = "<group>"; };
 		CDCE5B590F63DE88002B198A /* ESDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDrawerController.h; sourceTree = "<group>"; };
 		CDCE5B5A0F63DE88002B198A /* ESDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDrawerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				B87EB4DE0F63F136009CA28E /* SyncTaskSpec.m */,
+				CD3010BF0F640D2C0010EDC1 /* ESFileSystemItemSpec.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,6 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */,
+				CD3010B90F6409E00010EDC1 /* ESFileTreeDataSource.h */,
+				CD3010BA0F6409E00010EDC1 /* ESFileTreeDataSource.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -356,6 +364,7 @@
 				B8ED7DCB0F62C9E9002B5BA8 /* ESFileSystemItem.m in Sources */,
 				CDCE5B5B0F63DE88002B198A /* ESDrawerController.m in Sources */,
 				B87EB4E20F63F15C009CA28E /* SyncTask.m in Sources */,
+				CD3010BB0F6409E00010EDC1 /* ESFileTreeDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +375,7 @@
 				B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */,
 				B8ED7DB70F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */,
 				B87EB4DF0F63F136009CA28E /* SyncTaskSpec.m in Sources */,
+				CD3010C00F640D2C0010EDC1 /* ESFileSystemItemSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

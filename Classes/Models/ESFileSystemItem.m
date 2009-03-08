@@ -6,6 +6,7 @@
 +(id)new:(NSString *)thePath
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
+
     BOOL isDir, valid = [fileManager fileExistsAtPath:thePath isDirectory:&isDir];
     if (valid) {
         if (isDir){
@@ -16,5 +17,11 @@
         }
     }
     return nil;
+}
+
+-(id)initWithPath:(NSString *) thePath
+{
+    path = [NSString stringWithString:thePath];
+    return self;
 }
 @end
