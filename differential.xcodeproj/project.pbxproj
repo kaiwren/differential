@@ -21,6 +21,7 @@
 		B8ED7DCA0F62C9E9002B5BA8 /* ESFileSystemFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DC60F62C9E9002B5BA8 /* ESFileSystemFile.m */; };
 		B8ED7DCB0F62C9E9002B5BA8 /* ESFileSystemItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DC80F62C9E9002B5BA8 /* ESFileSystemItem.m */; };
 		B8ED7DCE0F62C9F9002B5BA8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */; };
+		CDCE5B5B0F63DE88002B198A /* ESDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE5B5A0F63DE88002B198A /* ESDrawerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		B8ED7DC70F62C9E9002B5BA8 /* ESFileSystemItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFileSystemItem.h; sourceTree = "<group>"; };
 		B8ED7DC80F62C9E9002B5BA8 /* ESFileSystemItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFileSystemItem.m; sourceTree = "<group>"; };
 		B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CDCE5B590F63DE88002B198A /* ESDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDrawerController.h; sourceTree = "<group>"; };
+		CDCE5B5A0F63DE88002B198A /* ESDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDrawerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +214,8 @@
 			children = (
 				B8ED7DBF0F62C99E002B5BA8 /* ESSomeController.h */,
 				B8ED7DC00F62C99E002B5BA8 /* ESSomeController.m */,
+				CDCE5B590F63DE88002B198A /* ESDrawerController.h */,
+				CDCE5B5A0F63DE88002B198A /* ESDrawerController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				B8ED7DC90F62C9E9002B5BA8 /* ESFileSystemDirectory.m in Sources */,
 				B8ED7DCA0F62C9E9002B5BA8 /* ESFileSystemFile.m in Sources */,
 				B8ED7DCB0F62C9E9002B5BA8 /* ESFileSystemItem.m in Sources */,
+				CDCE5B5B0F63DE88002B198A /* ESDrawerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
