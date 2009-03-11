@@ -20,7 +20,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D1107260486CEB800E47090 /* differential */;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
 			remoteInfo = differential;
 		};
 /* End PBXContainerItemProxy section */
@@ -311,6 +311,8 @@
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				OTHER_LDFLAGS = (
 					"-framework",
+					hamcrest,
+					"-framework",
 					Cocoa,
 					"-framework",
 					SenTestingKit,
@@ -338,6 +340,8 @@
 				INFOPLIST_FILE = "specs-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				OTHER_LDFLAGS = (
+					"-framework",
+					hamcrest,
 					"-framework",
 					Cocoa,
 					"-framework",

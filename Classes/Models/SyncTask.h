@@ -11,9 +11,10 @@
 
 @interface SyncTask : NSObject {
 	NSString *path;
+	NSDictionary *environment;
 }
 
 + (id) new: (NSString *) aPath;
-- (id) initWithPath: (NSString *) aPath;
-- (NSString *)runCommand:(NSString *)command withArguments:(NSArray *)args;
+- (id) initWithPath: (NSString *) aPath andEnv: (NSDictionary *) env;
+- (NSString *) run:(NSArray *) command ;
 @end

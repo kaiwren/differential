@@ -8,20 +8,14 @@
 - (void) testRunWithArguments
 {	
 	SyncTask *task = [SyncTask new: @"/Users/irfn/dev/ruby/ironruby"];
-	NSArray *args  = [NSArray arrayWithObjects:@"foo", nil];;
-
-	NSString *result = [task runCommand:@"/bin/echo" withArguments: args];
-	STAssertEqualStrings(@"foo", [result trim], @"should have been equal to foo");
+	NSString *result = [task run: [NSArray arrayWithObjects:@"echo", @"foo", nil]];
+	assertThat([result trim],is(equalTo(@"foo")));
 }
 
-- (void) xtestRunGit
+- (void) testRunGit
 {	
 	SyncTask *task = [SyncTask new: @"/Users/irfn/dev/ruby/ironruby"];
-	NSArray *args  = [NSArray arrayWithObjects:@"git", @"status", nil];
-	NSString *result = [task runCommand:@"/usr/bin/env" withArguments: args];
-	NSLog(@"-----------------------%@-------------------------",@"start");
-	NSLog(@"%@",result);
-	NSLog(@"-----------------------%@-------------------------",@"end");
+	NSString *result = [task run: [NSArray arrayWithObjects:@"git", @"status", nil]];
 	STAssertEqualStrings(@"foo", [result trim], @"");
 }
 

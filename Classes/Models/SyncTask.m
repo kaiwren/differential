@@ -1,52 +1,32 @@
 #import "SyncTask.h"
+#import "SyncPipe.h"
 
 
 @implementation SyncTask
 + (id) new: (NSString *) aPath {
-	return [[SyncTask alloc] initWithPath: aPath];
+	return [[SyncTask alloc] initWithPath: aPath andEnv: [NSProcessInfo environmentWith: @"/opt/local/bin:/usr/local/bin" ] ];
 }
 
-- (id) initWithPath: (NSString *) aPath {
+- (id) initWithPath: (NSString *) aPath andEnv: (NSDictionary *) env{
 	[super init];
 	path = aPath;
+	environment = env;
 	return self;
 }
 
-- (NSString *) runCommand:(NSString *) command withArguments:(NSArray *) args
-{
-	NSDictionary *env = [[NSProcessInfo processInfo] environment];
-	NSMutableDictionary *myEnv = [env mutableCopy];
-	NSString *path = [NSString stringWithFormat:@"%@:%@:%@",[env objectForKey:@"PATH"],@"/opt/local/bin",@"/usr/local/bin"];
-	[myEnv setValue: path forKey:@"PATH"];
-	
+- (NSString *) run:(NSArray *) command {		
 	NSTask *task = [[NSTask alloc] init];
-	NSPipe *newPipe = [NSPipe pipe];
-	NSPipe *errorPipe = [NSPipe pipe];
-	NSFileHandle *readHandle = [newPipe fileHandleForReading];
-	NSFileHandle *errorHandle = [errorPipe fileHandleForReading];
-	NSData *inData;
-	NSData *errorData;
-	NSString *tempString;
-	NSString *errorString;
+	SyncPipe *error = [SyncPipe new];
+	SyncPipe *output = [SyncPipe new];
 
 	[task setCurrentDirectoryPath: path];
-
-//	[task setCurrentDirectoryPath:NSHomeDirectory()];
-//	NSTask *hdiTask = [NSTask launchedTaskWithLaunchPath:@"/usr/bin/env" arguments:[NSArray arrayWithObjects:@"hdiutil", @"internet-enable", @"-quiet", archivePath, nil]];
-	[task setLaunchPath:command];
-	[task setArguments:args];
-	[task setEnvironment:myEnv];
-	[task setStandardOutput:newPipe];
-	[task setStandardError:errorPipe];
+	[task setLaunchPath:@"/usr/bin/env"];
+	[task setArguments:command];
+	[task setEnvironment:environment];
+	[task setStandardOutput:[output pipe]];
+	[task setStandardError:[error pipe]];
 	[task launch];
-	inData = [readHandle readDataToEndOfFile];
-	errorData = [errorHandle readDataToEndOfFile];
-	tempString = [[NSString alloc] initWithData:inData encoding:NSUTF8StringEncoding];
-	errorString = [[NSString alloc] initWithData:errorData encoding:NSUTF8StringEncoding];
 	[task release];
-	[tempString autorelease];
-	[errorString autorelease];
-//	NSLog(@"----------------------ERROR-----------------------%@",errorString);
-	return tempString;
+	return [output read];
 }
 @end
