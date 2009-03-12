@@ -11,6 +11,9 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B83399B80F6973B5007E674E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83399B70F6973B5007E674E /* SenTestingKit.framework */; };
+		B83399BB0F6973D7007E674E /* hamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83399B90F6973D7007E674E /* hamcrest.framework */; };
+		B83399BC0F6973D7007E674E /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83399BA0F6973D7007E674E /* OCMock.framework */; };
 		B87EB4DF0F63F136009CA28E /* SyncPipeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB4DE0F63F136009CA28E /* SyncPipeSpec.m */; };
 		B87EB4E20F63F15C009CA28E /* SyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB4E10F63F15C009CA28E /* SyncTask.m */; };
 		B87EB55B0F64014E009CA28E /* NSData+NSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB55A0F64014E009CA28E /* NSData+NSDataExtensions.m */; };
@@ -19,8 +22,6 @@
 		B87EB5970F640D59009CA28E /* SyncTaskSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB5960F640D59009CA28E /* SyncTaskSpec.m */; };
 		B889859C0F657C4300FE59FE /* NSProcessInfo+extras.m in Sources */ = {isa = PBXBuildFile; fileRef = B889859B0F657C4300FE59FE /* NSProcessInfo+extras.m */; };
 		B889859D0F657C4300FE59FE /* NSProcessInfo+extras.m in Sources */ = {isa = PBXBuildFile; fileRef = B889859B0F657C4300FE59FE /* NSProcessInfo+extras.m */; };
-		B8A7263B0F64457F0032E0E8 /* hamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A726390F64457F0032E0E8 /* hamcrest.framework */; };
-		B8A7263C0F64457F0032E0E8 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A7263A0F64457F0032E0E8 /* OCMock.framework */; };
 		B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D29AC10F5C3F34004AE6B5 /* GTMSenTestCase.m */; };
 		B8ED7DB70F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DB60F62C911002B5BA8 /* NSString+NSStringExtensions.m */; };
 		B8ED7DB80F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DB60F62C911002B5BA8 /* NSString+NSStringExtensions.m */; };
@@ -53,6 +54,9 @@
 		32CA4F630368D1EE00C91783 /* differential_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = differential_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* differential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = differential.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83399B70F6973B5007E674E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = SDKROOT; };
+		B83399B90F6973D7007E674E /* hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hamcrest.framework; path = Frameworks/hamcrest.framework; sourceTree = "<group>"; };
+		B83399BA0F6973D7007E674E /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
 		B87EB4DE0F63F136009CA28E /* SyncPipeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncPipeSpec.m; sourceTree = "<group>"; };
 		B87EB4E00F63F15C009CA28E /* SyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncTask.h; sourceTree = "<group>"; };
 		B87EB4E10F63F15C009CA28E /* SyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTask.m; sourceTree = "<group>"; };
@@ -60,15 +64,11 @@
 		B87EB55A0F64014E009CA28E /* NSData+NSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NSDataExtensions.m"; sourceTree = "<group>"; };
 		B87EB56D0F6404EC009CA28E /* SyncPipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncPipe.h; sourceTree = "<group>"; };
 		B87EB56E0F6404EC009CA28E /* SyncPipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncPipe.m; sourceTree = "<group>"; };
-		B87EB5800F640BBD009CA28E /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
 		B87EB5960F640D59009CA28E /* SyncTaskSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTaskSpec.m; sourceTree = "<group>"; };
 		B889859A0F657C4300FE59FE /* NSProcessInfo+extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProcessInfo+extras.h"; sourceTree = "<group>"; };
 		B889859B0F657C4300FE59FE /* NSProcessInfo+extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSProcessInfo+extras.m"; sourceTree = "<group>"; };
 		B89E6F880F629CFA00E4C978 /* SpecHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
 		B89E70230F62B8C000E4C978 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B8A725500F64392B0032E0E8 /* hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hamcrest.framework; path = Frameworks/hamcrest.framework; sourceTree = "<group>"; };
-		B8A726390F64457F0032E0E8 /* hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hamcrest.framework; path = Frameworks/hamcrest.framework; sourceTree = SOURCE_ROOT; };
-		B8A7263A0F64457F0032E0E8 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
 		B8D29ABF0F5C3F34004AE6B5 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		B8D29AC00F5C3F34004AE6B5 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
 		B8D29AC10F5C3F34004AE6B5 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
@@ -102,8 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8A7263B0F64457F0032E0E8 /* hamcrest.framework in Frameworks */,
-				B8A7263C0F64457F0032E0E8 /* OCMock.framework in Frameworks */,
+				B83399B80F6973B5007E674E /* SenTestingKit.framework in Frameworks */,
+				B83399BB0F6973D7007E674E /* hamcrest.framework in Frameworks */,
+				B83399BC0F6973D7007E674E /* OCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +141,6 @@
 		29B97314FDCFA39411CA2CEA /* differential */ = {
 			isa = PBXGroup;
 			children = (
-				B8A726390F64457F0032E0E8 /* hamcrest.framework */,
-				B8A7263A0F64457F0032E0E8 /* OCMock.framework */,
 				B8D29AC30F5C3F48004AE6B5 /* Classes */,
 				B8D29ABD0F5C3F34004AE6B5 /* Lib */,
 				B8D29ABC0F5C3F26004AE6B5 /* Spec */,
@@ -177,8 +176,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B8A725500F64392B0032E0E8 /* hamcrest.framework */,
-				B87EB5800F640BBD009CA28E /* OCMock.framework */,
+				B83399B70F6973B5007E674E /* SenTestingKit.framework */,
+				B83399B90F6973D7007E674E /* hamcrest.framework */,
+				B83399BA0F6973D7007E674E /* OCMock.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -440,22 +440,26 @@
 		B8ECF3360F2F5F4500D14C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/differential.app/Contents/MacOS/differential";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks/**",
-					"\"$(SRCROOT)/Frameworks\"/**",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+					"$(SRCROOT)/Frameworks",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
 				INFOPLIST_FILE = "specs-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
@@ -472,22 +476,26 @@
 		B8ECF3370F2F5F4500D14C0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/differential.app/Contents/MacOS/differential";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks/**",
-					"\"$(SRCROOT)/Frameworks\"/**",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+					"$(SRCROOT)/Frameworks",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
 				INFOPLIST_FILE = "specs-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Cocoa,
@@ -507,8 +515,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -524,6 +537,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = differential_Prefix.pch;
@@ -537,7 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Frameworks/**";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -552,7 +570,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Frameworks/**";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

@@ -23,7 +23,7 @@
 
 -(id) initPipe{
 	[self init];
-	pipe = [[NSPipe pipe] autorelease];
+	pipe = [NSPipe pipe];
 	return self;
 }
 @end
