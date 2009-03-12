@@ -17,4 +17,5 @@
 
 +(id) new; 
 -(NSString *) read;
+-(id) initPipe;
 @end

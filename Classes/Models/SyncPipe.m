@@ -13,7 +13,7 @@
 @synthesize pipe; 
 
 + (id) new{
-	[[SyncPipe alloc] initPipe];
+	return [[SyncPipe alloc] initPipe];
 }
 -(NSString *) read{	
 	NSFileHandle *readHandle = [pipe fileHandleForReading];
