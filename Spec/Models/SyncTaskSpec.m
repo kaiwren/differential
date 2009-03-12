@@ -10,7 +10,7 @@
 {	
 	SyncTask *task = [SyncTask new: NSHomeDirectory()];
 	NSString *result =  [task run: [NSArray arrayWithObjects:@"echo", @"foo", nil] ];
-//	assertThat( [result trim] , should(equalTo(@"foo")));
+	assertThat( [result trim] , is(equalTo(@"foo")));
 }
 
 @end
