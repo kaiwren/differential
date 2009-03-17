@@ -11,15 +11,12 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		B83399B80F6973B5007E674E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83399B70F6973B5007E674E /* SenTestingKit.framework */; };
 		B83399BB0F6973D7007E674E /* hamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83399B90F6973D7007E674E /* hamcrest.framework */; };
 		B83399BC0F6973D7007E674E /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83399BA0F6973D7007E674E /* OCMock.framework */; };
-		B87EB4DF0F63F136009CA28E /* SyncPipeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB4DE0F63F136009CA28E /* SyncPipeSpec.m */; };
 		B87EB4E20F63F15C009CA28E /* SyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB4E10F63F15C009CA28E /* SyncTask.m */; };
 		B87EB55B0F64014E009CA28E /* NSData+NSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB55A0F64014E009CA28E /* NSData+NSDataExtensions.m */; };
 		B87EB55C0F64014E009CA28E /* NSData+NSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB55A0F64014E009CA28E /* NSData+NSDataExtensions.m */; };
 		B87EB56F0F6404EC009CA28E /* SyncPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB56E0F6404EC009CA28E /* SyncPipe.m */; };
-		B87EB5970F640D59009CA28E /* SyncTaskSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB5960F640D59009CA28E /* SyncTaskSpec.m */; };
 		B889859C0F657C4300FE59FE /* NSProcessInfo+extras.m in Sources */ = {isa = PBXBuildFile; fileRef = B889859B0F657C4300FE59FE /* NSProcessInfo+extras.m */; };
 		B889859D0F657C4300FE59FE /* NSProcessInfo+extras.m in Sources */ = {isa = PBXBuildFile; fileRef = B889859B0F657C4300FE59FE /* NSProcessInfo+extras.m */; };
 		B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D29AC10F5C3F34004AE6B5 /* GTMSenTestCase.m */; };
@@ -30,6 +27,10 @@
 		B8ED7DCA0F62C9E9002B5BA8 /* ESFileSystemFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DC60F62C9E9002B5BA8 /* ESFileSystemFile.m */; };
 		B8ED7DCB0F62C9E9002B5BA8 /* ESFileSystemItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED7DC80F62C9E9002B5BA8 /* ESFileSystemItem.m */; };
 		B8ED7DCE0F62C9F9002B5BA8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */; };
+		CDB636E90F6FF95400F54A30 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB636E80F6FF95400F54A30 /* SenTestingKit.framework */; };
+		CDB637020F6FF9A500F54A30 /* ESFileSystemItemSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB636FF0F6FF9A500F54A30 /* ESFileSystemItemSpec.m */; };
+		CDB637030F6FF9A500F54A30 /* SyncPipeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB637000F6FF9A500F54A30 /* SyncPipeSpec.m */; };
+		CDB637040F6FF9A500F54A30 /* SyncTaskSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB637010F6FF9A500F54A30 /* SyncTaskSpec.m */; };
 		CDCE5B5B0F63DE88002B198A /* ESDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE5B5A0F63DE88002B198A /* ESDrawerController.m */; };
 /* End PBXBuildFile section */
 
@@ -54,17 +55,14 @@
 		32CA4F630368D1EE00C91783 /* differential_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = differential_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* differential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = differential.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B83399B70F6973B5007E674E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = SDKROOT; };
 		B83399B90F6973D7007E674E /* hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hamcrest.framework; path = Frameworks/hamcrest.framework; sourceTree = "<group>"; };
 		B83399BA0F6973D7007E674E /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
-		B87EB4DE0F63F136009CA28E /* SyncPipeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncPipeSpec.m; sourceTree = "<group>"; };
 		B87EB4E00F63F15C009CA28E /* SyncTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncTask.h; sourceTree = "<group>"; };
 		B87EB4E10F63F15C009CA28E /* SyncTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTask.m; sourceTree = "<group>"; };
 		B87EB5590F64014E009CA28E /* NSData+NSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NSDataExtensions.h"; sourceTree = "<group>"; };
 		B87EB55A0F64014E009CA28E /* NSData+NSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NSDataExtensions.m"; sourceTree = "<group>"; };
 		B87EB56D0F6404EC009CA28E /* SyncPipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncPipe.h; sourceTree = "<group>"; };
 		B87EB56E0F6404EC009CA28E /* SyncPipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncPipe.m; sourceTree = "<group>"; };
-		B87EB5960F640D59009CA28E /* SyncTaskSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTaskSpec.m; sourceTree = "<group>"; };
 		B889859A0F657C4300FE59FE /* NSProcessInfo+extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProcessInfo+extras.h"; sourceTree = "<group>"; };
 		B889859B0F657C4300FE59FE /* NSProcessInfo+extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSProcessInfo+extras.m"; sourceTree = "<group>"; };
 		B89E6F880F629CFA00E4C978 /* SpecHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
@@ -85,6 +83,10 @@
 		B8ED7DC70F62C9E9002B5BA8 /* ESFileSystemItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFileSystemItem.h; sourceTree = "<group>"; };
 		B8ED7DC80F62C9E9002B5BA8 /* ESFileSystemItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFileSystemItem.m; sourceTree = "<group>"; };
 		B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CDB636E80F6FF95400F54A30 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CDB636FF0F6FF9A500F54A30 /* ESFileSystemItemSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFileSystemItemSpec.m; sourceTree = "<group>"; };
+		CDB637000F6FF9A500F54A30 /* SyncPipeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncPipeSpec.m; sourceTree = "<group>"; };
+		CDB637010F6FF9A500F54A30 /* SyncTaskSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncTaskSpec.m; sourceTree = "<group>"; };
 		CDCE5B590F63DE88002B198A /* ESDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDrawerController.h; sourceTree = "<group>"; };
 		CDCE5B5A0F63DE88002B198A /* ESDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDrawerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,9 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B83399B80F6973B5007E674E /* SenTestingKit.framework in Frameworks */,
 				B83399BB0F6973D7007E674E /* hamcrest.framework in Frameworks */,
 				B83399BC0F6973D7007E674E /* OCMock.framework in Frameworks */,
+				CDB636E90F6FF95400F54A30 /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +178,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B83399B70F6973B5007E674E /* SenTestingKit.framework */,
+				CDB636E80F6FF95400F54A30 /* SenTestingKit.framework */,
 				B83399B90F6973D7007E674E /* hamcrest.framework */,
 				B83399BA0F6973D7007E674E /* OCMock.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
@@ -185,19 +187,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B87EB4DD0F63F136009CA28E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B87EB5960F640D59009CA28E /* SyncTaskSpec.m */,
-				B87EB4DE0F63F136009CA28E /* SyncPipeSpec.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		B8D29ABC0F5C3F26004AE6B5 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
-				B87EB4DD0F63F136009CA28E /* Models */,
+				CDB636FE0F6FF9A500F54A30 /* Models */,
 				B89E6F880F629CFA00E4C978 /* SpecHelper.h */,
 			);
 			path = Spec;
@@ -279,6 +272,16 @@
 				B8ED7DCD0F62C9F9002B5BA8 /* .gitignore */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CDB636FE0F6FF9A500F54A30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDB636FF0F6FF9A500F54A30 /* ESFileSystemItemSpec.m */,
+				CDB637000F6FF9A500F54A30 /* SyncPipeSpec.m */,
+				CDB637010F6FF9A500F54A30 /* SyncTaskSpec.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,10 +403,11 @@
 			files = (
 				B8D29AC20F5C3F34004AE6B5 /* GTMSenTestCase.m in Sources */,
 				B8ED7DB70F62C911002B5BA8 /* NSString+NSStringExtensions.m in Sources */,
-				B87EB4DF0F63F136009CA28E /* SyncPipeSpec.m in Sources */,
 				B87EB55C0F64014E009CA28E /* NSData+NSDataExtensions.m in Sources */,
-				B87EB5970F640D59009CA28E /* SyncTaskSpec.m in Sources */,
 				B889859C0F657C4300FE59FE /* NSProcessInfo+extras.m in Sources */,
+				CDB637020F6FF9A500F54A30 /* ESFileSystemItemSpec.m in Sources */,
+				CDB637030F6FF9A500F54A30 /* SyncPipeSpec.m in Sources */,
+				CDB637040F6FF9A500F54A30 /* SyncTaskSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
