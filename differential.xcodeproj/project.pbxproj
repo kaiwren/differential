@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		3DD7FA510F95032D00335357 /* flex.l in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7FA4F0F95032D00335357 /* flex.l */; };
+		3DD7FA570F95056600335357 /* CodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7FA560F95056600335357 /* CodeViewController.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -53,6 +55,10 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* differential_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = differential_Prefix.pch; sourceTree = "<group>"; };
+		3DD7FA4F0F95032D00335357 /* flex.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = flex.l; sourceTree = "<group>"; };
+		3DD7FA500F95032D00335357 /* flextokens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flextokens.h; sourceTree = "<group>"; };
+		3DD7FA550F95056600335357 /* CodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeViewController.h; sourceTree = "<group>"; };
+		3DD7FA560F95056600335357 /* CodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* differential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = differential.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83399B90F6973D7007E674E /* hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hamcrest.framework; path = Frameworks/hamcrest.framework; sourceTree = SOURCE_ROOT; };
@@ -241,6 +247,8 @@
 		B8ED7DBE0F62C99E002B5BA8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3DD7FA550F95056600335357 /* CodeViewController.h */,
+				3DD7FA560F95056600335357 /* CodeViewController.m */,
 				B8ED7DBF0F62C99E002B5BA8 /* ESSomeController.h */,
 				B8ED7DC00F62C99E002B5BA8 /* ESSomeController.m */,
 				CDCE5B590F63DE88002B198A /* ESDrawerController.h */,
@@ -252,6 +260,8 @@
 		B8ED7DC20F62C9E9002B5BA8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3DD7FA4F0F95032D00335357 /* flex.l */,
+				3DD7FA500F95032D00335357 /* flextokens.h */,
 				B87EB4E00F63F15C009CA28E /* SyncTask.h */,
 				B87EB4E10F63F15C009CA28E /* SyncTask.m */,
 				B8ED7DC30F62C9E9002B5BA8 /* ESFileSystemDirectory.h */,
@@ -394,6 +404,8 @@
 				B87EB55B0F64014E009CA28E /* NSData+NSDataExtensions.m in Sources */,
 				B87EB56F0F6404EC009CA28E /* SyncPipe.m in Sources */,
 				B889859D0F657C4300FE59FE /* NSProcessInfo+extras.m in Sources */,
+				3DD7FA510F95032D00335357 /* flex.l in Sources */,
+				3DD7FA570F95056600335357 /* CodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
